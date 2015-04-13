@@ -1,24 +1,128 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+@import url("../fonts/fonts.css");
+body{
+	-webkit-font-kerning: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'open_sansregular';
+}
+:focus {outline:0 none;outline-offset:0;}
+h1 {
+	font-size:42px;
+	font-family: 'open_sanslight';
+	font-style: normal;
+}
+.block-center {
+	height:auto;
+	display:block;
+	text-align:center;
+}
+.uppercase {text-transform:uppercase;}
+.custom-fade {
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+}
+.link-to {
+	background-color:transparent;
+	width:40px !important;
+	height:40px !important;
+	border:2px solid #ffffff;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	text-decoration:none;
+	color:#ffffff;
+	vertical-align:middle;
+	display:block;
+	text-align:center;
+	line-height:40px;
+}
+	.link-to:hover {
+		background-color:#ffffff;
+	}
+/*-- Slider --*/
+.slider-wrapper{
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+	background:#2c3e50;
+	border:1px solid #000;
+	box-shadow:0 3px 5px #666;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.slider{
+	position:relative;
+	width:100%;
+	margin:0 auto;
+	background:#2c3e50;
+	min-height:574px;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+@media only screen and (min-width: 1000px){
+	.slider{width:1000px;}
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+@media only screen and (min-width: 1440px){
+	.slider{width:1440px;}
+}
+
+.slider h1 {color:#ffffff;display:block;text-align:center;}
+.slider h1 strong {font-family: 'open_sansbold';}
+.slider p{
+	z-index:8000;
+	padding:1% 3%;
+	font-size:14px;
+	line-height:normal;
+	font-family: 'open_sanslight';
+	color:#ffffff;
+	display:block;
+	text-align:center;
+}
+.slider .claim{line-height:100%}	
+.slider .teaser{
+	padding:0.5% 1.5%;
+	font-size:14px;
+	line-height:100%
+}
+
+.slider .small{
+	width:250px;
+	padding-left:0; padding-right:0px;
+	text-align:center;
+}
+
+.light-green{background:#95C542;}
+.green{background:#7CB761}
+.orange{background:#EF7D00}
+.turky{background:#348E8A}
+.white{background:#fff;color:#333}
+
+
+/*--*/
+.custom-link-btn {
+	background-color:#22303d;
+	border-style:solid;
+	border-width:2px;
+	border-color:#ffffff;
+	display:inline-block;
+	vertical-align:middle;
+	min-width:230px;
+	height:70px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	text-decoration:none;
+	line-height:70px;
+	text-align:center;
+	color:#ffffff;
+	margin:0 15px;
+}
+.custom-link-btn:hover {
+	background-color:#16a085;
+	height:72px;
+	border-style:solid;
+	border-width:0 0 2px;
+	border-color:transparent transparent #ffffff;
+	color:#ffffff;
+	text-decoration:none;
 }
