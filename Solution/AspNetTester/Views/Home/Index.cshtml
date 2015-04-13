@@ -2,38 +2,39 @@
     ViewBag.Title = "Landing Page";
 }
 <div id="page-wrapper">
-	<div class="slider-wrapper">
-		<div class="responisve-container">
-			<div class="slider">
-				<div class="fs_loader"></div>
-				<div class="slide">
-					<img src="~/images/01_waves.png" data-position="240,300" data-in="right" data-ease-in="easeOutCirc">
-					<img src="~/images/top-logo.png" alt="logo" title="Logo" width="256" height="116" data-position="100,360" data-in="fade" data-ease-in="easeOutCirc">
-					<h1 data-position="220,0" data-in="bottom" data-out="fade">Nullam viverra consectetuer <strong>quisque cursus et</strong>,<br>porttithendrerit nulla quam nunc, accumsan congue.</h1>
-					<p data-position="340,0" data-in="bottom" data-step="1" data-delay="500">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
-					<div class="block-center" data-position="420,240" data-in="bottom" data-out="fade" data-step="2">
-						<a href="" class="custom-link-btn custom-fade uppercase">TAKE A TOUR</a>
-						<a href="" class="custom-link-btn custom-fade uppercase">WATCH A VIDEO</a>
-					</div>
-					<a href="" class="link-to" data-position="520,480" data-in="bottom" data-step="2" data-out="bottom">
-						<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-					</a>
-				</div>
-				<div class="slide" data-in="slideLeft">
-					<img src="~/images/02_small_boxes.png" data-position="80,220" data-in="fade" data-delay="500" data-out="bottomRight">
-					<p class="claim light-green small" data-position="30,30" data-in="top" data-step="1" data-out="top">Lorem Ipsum Dolor</p>
-					<p class="teaser turky small" data-position="90,30" data-in="bottom" data-step="2" data-delay="500">Lorem Ipsum</p>
-					<p class="teaser turky small" data-position="120,30" data-in="bottom" data-step="2" data-delay="1500">Dolor Sit</p>
-					<p class="teaser turky small" data-position="150,30" data-in="bottom" data-step="2" data-delay="2500">long established</p>
-					<p class="teaser turky small" data-position="180,30" data-in="bottom" data-step="2" data-delay="3500">Bonorum et Malorum</p>
-					<p class="teaser turky small" data-position="210,30" data-in="bottom" data-step="2" data-delay="4500">Amet Consectum</p>
-					<img src="~/images/01_waves.png" data-position="240,200" data-in="right" data-step="2" data-ease-in="easeOutCirc">
-					<img src="~/images/02_main.png" data-position="105,180" data-in="fade" data-delay="500" data-out="bottomRight">
-					<a href="" class="link-to" data-position="520,480" data-in="bottom" data-step="2" data-out="bottom">
-						<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="slider-wrapper">
+        <div class="responisve-container">
+            <div class="slider">
+                <div class="fs_loader"></div>
+                <div class="slide">
+                    <img src="~/images/01_waves.png" data-position="240,300" data-in="right" data-ease-in="easeOutCirc">
+                    <img src="~/images/top-logo.png" alt="logo" title="Logo" width="256" height="116" data-position="100,360" data-in="fade" data-ease-in="easeOutCirc">
+                    <h1 data-position="220,0" data-in="bottom" data-out="fade">Nullam viverra consectetuer <strong>quisque cursus et</strong>,<br>porttithendrerit nulla quam nunc, accumsan congue.</h1>
+                    <p data-position="340,0" data-in="bottom" data-step="1" data-delay="500">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
+                    <div class="block-center" data-position="420,240" data-in="bottom" data-out="fade" data-step="2">
+                        @Html.ActionLink("TAKE A TOUR", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
+                        @Html.ActionLink("WATCH A VIDEO", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
+                    </div>
+                    <a href="" class="link-to" data-position="520,480" data-in="bottom" data-step="2" data-out="bottom">
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="slide" data-in="slideLeft">
+                    <img src="~/images/02_small_boxes.png" data-position="80,220" data-in="fade" data-delay="500" data-out="bottomRight">
+                    <p class="claim light-green small" data-position="30,30" data-in="top" data-step="1" data-out="top">Lorem Ipsum Dolor</p>
+                    <p class="teaser turky small" data-position="90,30" data-in="bottom" data-step="2" data-delay="500">Lorem Ipsum</p>
+                    <p class="teaser turky small" data-position="120,30" data-in="bottom" data-step="2" data-delay="1500">Dolor Sit</p>
+                    <p class="teaser turky small" data-position="150,30" data-in="bottom" data-step="2" data-delay="2500">long established</p>
+                    <p class="teaser turky small" data-position="180,30" data-in="bottom" data-step="2" data-delay="3500">Bonorum et Malorum</p>
+                    <p class="teaser turky small" data-position="210,30" data-in="bottom" data-step="2" data-delay="4500">Amet Consectum</p>
+                    <img src="~/images/01_waves.png" data-position="240,200" data-in="right" data-step="2" data-ease-in="easeOutCirc">
+                    <img src="~/images/02_main.png" data-position="105,180" data-in="fade" data-delay="500" data-out="bottomRight">
+                    <a href="" class="link-to" data-position="520,480" data-in="bottom" data-step="2" data-out="bottom">
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
