@@ -26,7 +26,7 @@ namespace AspNetTester
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include("~/Scripts/custom.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/site.css", "~/Content/fractionslider.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/Site.css", "~/Content/fractionslider.css"));
 			
 			BundleTable.EnableOptimizations = true;
         }
