@@ -28,7 +28,7 @@ namespace AspNetTester
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/Site.css", "~/Content/fractionslider.css"));
 			
-			BundleTable.EnableOptimizations = true;
+			BundleTable.EnableOptimizations = false;
         }
     }
 }
