@@ -6,7 +6,9 @@
 }
 
 .fraction-slider .slide{
-	display:none; width:100%; height:100%;
+	display:none;
+	width:100%;
+	height:100%;
 	position:absolute;
 	z-index:5000;
 }
@@ -24,7 +26,7 @@
 
 .fraction-slider .fs_fixed_obj{z-index:6000;left:0;}
 
-.fraction-slider .fs_obj *{
+.fraction-slider .fs_obj * {
 	display:inline-block;
 	position:relative;
 	top:0px;
@@ -52,7 +54,6 @@
 	top:50%;
 	margin-top:-22.5px;
 	background:url(../images/fs.prevnext.png) 0px 0px no-repeat transparent;
-	
 }
 .fraction-slider .prev:hover{
 	background:url(../images/fs.prevnext.png) 0px -45px no-repeat transparent;
