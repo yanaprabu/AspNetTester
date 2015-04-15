@@ -19,3 +19,4 @@ wow = new WOW(
   }
 );
 wow.init();
+$('.carousel').carousel();
