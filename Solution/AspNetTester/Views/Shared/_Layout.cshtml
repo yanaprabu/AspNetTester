@@ -12,14 +12,16 @@
 
 </head>
 <body>
-	<div id="loader-wrapper">
+    <div id="loader-wrapper">
         <div id="loader"></div>
     </div>
+
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/fractionslider")
+    @Scripts.Render("~/bundles/scroller")
     @Scripts.Render("~/bundles/custom")
     @RenderSection("scripts", required: false)
 </body>
