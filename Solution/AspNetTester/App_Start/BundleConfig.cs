@@ -24,11 +24,11 @@ namespace AspNetTester
 
             bundles.Add(new ScriptBundle("~/bundles/fractionslider").Include("~/Scripts/jquery.fractionslider.min.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/scroller").Include("~/Scripts/smooth-scroll.js", "~/Scripts/skrollr.min.js", "wow.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/scroller").Include("~/Scripts/smooth-scroll.js", "~/Scripts/skrollr.min.js", "~/Scripts/wow.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include("~/Scripts/custom.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css","~/Content/fractionslider.css", "~/Content/font-awesome.css","~/Content/animate.css","~/Content/Site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/Site.css", "~/Content/fractionslider.css", "~/Content/font-awesome.css", "~/Content/animate.css"));
 			
 			BundleTable.EnableOptimizations = false;
         }

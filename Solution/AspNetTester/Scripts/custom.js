@@ -1,11 +1,7 @@
 $(window).on('load',function(){
 	
+    // Hide loader and display content
     $('#loader-wrapper').fadeOut('slow', function () {
-        $('#page-wrapper').fadeIn('slow');
-        function winHeight(el) {
-            $(el).css('height', $(window).height());
-        }
-
         $('.slider').fractionSlider({
             'fullWidth': true,
             'controls': true,

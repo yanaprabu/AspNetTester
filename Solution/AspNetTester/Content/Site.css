@@ -80,9 +80,11 @@
         }
     }
 body{
+	background-color:#ffffff;
 	-webkit-font-kerning: auto;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'open_sansregular';
+	overflow-x:hidden;
 }
 :focus {outline:0 none;outline-offset:0;}
 
@@ -92,12 +94,76 @@ h1 {
 	font-family: 'open_sanslight';
 	font-style: normal;
 }
-
+h2{
+	font-size:26px;
+	font-family: 'open_sanslight';
+	font-style: normal;
+}
+h3{
+	font-size:24px;
+	font-family: 'open_sanslight';
+	font-style: normal;
+}
+h4{
+	font-size:18px;
+	font-family: 'open_sanslight';
+	font-style: normal;
+}
+h5{
+	font-size:14px;
+	font-family: 'open_sanslight';
+	font-style: normal;
+}
+blockquote {
+    border-left: medium none;
+    color: #8a8a8a;
+    font-family: Georgia;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+    padding: 10px 4px;
+}
 /*-- TypoGraphy --*/
 
 /*-- General Class --*/
+.white-bg {background-color:#ffffff;}
+.blue-bg {background-color:#2c3e50;}
+.d-line {
+    background-color: #e6e9eb;
+    height: 2px;
+    left: -20%;
+    position: absolute;
+    top: 600px;
+    width: 140%;
+    z-index: 8001;
+}
+	.d-line.diagonal-1 {
+		-moz-transform:rotate(10deg);
+		-webkit-transform:rotate(10deg);
+		transform:rotate(10deg);
+	}
+	.d-line.diagonal-2 {
+		-moz-transform:rotate(-10deg);
+		-webkit-transform:rotate(-10deg);
+		transform:rotate(-10deg);
+	}
+	.d-line.diagonal-3 {
+		-moz-transform:rotate(20deg);
+		-webkit-transform:rotate(20deg);
+		transform:rotate(20deg);
+	}
+	.d-line.diagonal-4 {
+		-moz-transform:rotate(-20deg);
+		-webkit-transform:rotate(-20deg);
+		transform:rotate(-20deg);
+	}
+	
 .block-center {height:auto;display:block;text-align:center;}
+.aligncenter {text-align:center;}
 .uppercase {text-transform:uppercase;}
+.border-con {border:1px solid #e1e1e1;}
+.minh {min-height:100px;}
+
 .custom-link-btn {
 	background-color:#22303d;
 	border-style:solid;
@@ -116,15 +182,29 @@ h1 {
 	color:#ffffff;
 	margin:0 15px;
 }
-.custom-link-btn:hover {
+.custom-link-btn.type-2 {
 	background-color:#16a085;
-	height:72px;
-	border-style:solid;
 	border-width:0 0 2px;
-	border-color:transparent transparent #ffffff;
-	color:#ffffff;
-	text-decoration:none;
+	border-color:transparent transparent #3bd4b6;
 }
+	.custom-link-btn:hover {
+		background-color:#16a085;
+		height:72px;
+		border-style:solid;
+		border-width:0 0 2px;
+		border-color:transparent transparent #ffffff;
+		color:#ffffff;
+		text-decoration:none;
+	}
+	.custom-link-btn.type-2:hover {
+		background-color:#228773;
+		height:70px;
+		border-style:solid;
+		border-width:0 0 2px;
+		border-color:transparent transparent #1b7160;
+		color:#ffffff;
+		text-decoration:none;
+	}
 .custom-fade {
 	-webkit-transition:all 0.5s linear;
 	-moz-transition:all 0.5s linear;
@@ -145,15 +225,56 @@ h1 {
 	text-align:center;
 	line-height:40px;
 }
-	.link-to:hover {
-		background-color:#ffffff;
+	.link-to:hover {background-color:#ffffff;}
+	.link-to.green {border:1px solid #16a085;color:#16a085;}
+	.link-to.center-pos{margin:0 auto 20px;}
+	
+.topcon {margin-bottom:72px;}
+
+.post-content {padding-top:0;}
+	.post-content h6 {
+		color: #a9a9a9;
+		display: block;
+		font-family: georgia;
+		font-size: 12px;
+		font-style: italic;
+		line-height: 26px;
+		margin-bottom: 12px;
+		margin-top: 16px;
+	}
+	.post-content h1 {
+		font-family: 'open_sanslight';
+		color:#363636;
+		display:block;
+		font-size:36px;
+		font-weight:normal;
+		margin-top:0;
+		margin-bottom:10px;
+		text-transform:uppercase;
+		line-height:30px;
+	}
+	.post-content h1 i {color:#d0d6d9;vertical-align:bottom;}
+	.post-content p {
+		color: #777777;
+		display: block;
+		font-family: "open_sanslight";
+		font-size: 14px;
+		font-weight: normal;
+		line-height: normal;
+		margin-bottom: 14px;
+		margin-top: 18px;
 	}
 /*-- General Class end --*/
 
 /*-- Page Wrapper --*/
-#page-wrapper {
-	display:none;
-}	
+#page-content {
+	background-image:url(../images/line-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:top center;
+	display:block;
+	margin:0;
+	padding:0;
+}
 	
 /*-- Slider --*/
 .slider-wrapper{
@@ -162,7 +283,6 @@ h1 {
 	width:100%;
 	margin:0 auto;
 	background:#2c3e50;
-	border:1px solid #000;
 	box-shadow:0 3px 5px #666;
 	z-index:1000;
 }
@@ -171,7 +291,7 @@ h1 {
 	width:100%;
 	margin:0 auto;
 	background:#2c3e50;
-	min-height:574px;
+	min-height:540px;
 }
 	.slider h1 {color:#ffffff;display:block;text-align:center;}
 	.slider h1 strong {font-family: 'open_sansbold';}
