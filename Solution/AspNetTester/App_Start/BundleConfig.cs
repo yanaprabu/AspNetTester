@@ -28,6 +28,8 @@ namespace AspNetTester
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include("~/Scripts/custom.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/init").Include("~/Scripts/init.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/Site.css", "~/Content/fractionslider.css", "~/Content/font-awesome.css", "~/Content/animate.css"));
 			
 			BundleTable.EnableOptimizations = false;

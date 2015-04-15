@@ -13,5 +13,5 @@ $(window).on('load',function(){
             'slideEndAnimation': true
         });
     });
-
+	
 });

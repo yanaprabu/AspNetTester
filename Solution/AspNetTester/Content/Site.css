@@ -268,13 +268,18 @@ blockquote {
 
 /*-- Page Wrapper --*/
 #page-content {
-	background-image:url(../images/line-bg.jpg);
-	background-repeat:repeat-x;
-	background-position:top center;
-	display:block;
-	margin:0;
-	padding:0;
+	background-image: url(../images/line-bg.jpg);
+	background-position: center top;
+	background-repeat: repeat-x;
+	display: block;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+	z-index: 8000;
 }
+/*-- Page Wrapper end --*/	
 	
 /*-- Slider --*/
 .slider-wrapper{
@@ -320,3 +325,7 @@ blockquote {
 	.slider{width:1440px;}
 }
 /*-- Slider End --*/
+
+/*-- Section 1 --*/
+#section-1 {padding-top:144px;position:relative;z-index:8005;}
+#section-1  .post-content {padding-top:20px;}
