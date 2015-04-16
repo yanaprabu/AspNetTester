@@ -1,47 +1,6 @@
 ﻿@{
     ViewBag.Title = "Landing Page";
 }
-<div class="slider-wrapper">
-    <div class="responsive-container">
-        <div class="slider">
-            <div class="fs_loader"></div>
-            <div class="slide bg-1">
-                <img src="~/images/top-logo.png" alt="logo" title="Logo" width="256" height="116" data-position="100,600" data-in="fade" data-ease-in="easeOutCirc">
-				<h1 data-position="220,230" data-in="bottom" data-out="fade">Nullam viverra consectetuer <strong>quisque cursus et</strong>,<br>porttithendrerit nulla quam nunc, accumsan congue.</h1>
-				<p data-position="340,200" data-in="bottom" data-step="1" data-delay="500">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
-                <div class="block-center" data-position="420,440" data-in="bottom" data-out="fade" data-step="2">
-                    @Html.ActionLink("TAKE A TOUR", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
-                    @Html.ActionLink("WATCH A VIDEO", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
-                </div>
-            </div>
-            <div class="slide bg-1">
-                <img src="~/images/top-logo.png" alt="logo" title="Logo" data-position="100,100" data-in="top" data-ease-in="easeOutCirc">
-				<h1 data-position="210,100" data-in="bottom" data-out="fade" class="left-text">Nullam viverra consectetuer<br><strong>quisque cursus et</strong>,nunc,<br>accumsan congue.</h1>
-				<p data-position="380,100" data-in="bottom" data-step="1" class="no-padd left-text">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel<br>bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
-				<div class="block-center" data-position="460,85" data-in="bottom" data-out="fade" data-step="2">
-					@Html.ActionLink("TAKE A TOUR", "Index", "Home", routeValues:null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
-					@Html.ActionLink("WATCH A VIDEO", "Index", "Home", routeValues:null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
-				</div>
-				<img src="~/images/woman.png" data-position="50,780" data-step="2" data-in="right" data-ease-in="easeOutCirc">
-            </div>
-			<div class="slide bg-2" data-in="fade">
-					<img src="~/images/top-logo.png" alt="logo" title="Logo" width="256" height="116" data-position="50,600" data-in="top" data-ease-in="easeOutCirc">
-					<p data-position="170,200" data-in="bottom" data-step="1" data-delay="500">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
-					<div class="block-center" data-position="230,590" data-in="bottom" data-out="fade" data-step="2">
-						<a href="" class="custom-link-btn custom-fade uppercase">TAKE A TOUR</a>
-					</div>
-					<img src="~/images/man-1.png" data-position="320,210" data-step="3" data-in="right" data-out="fade" data-ease-in="easeOutCirc">
-					<img src="~/images/man-2.png" data-position="320,820" data-step="3" data-in="left" data-out="fade" data-ease-in="easeOutCirc">
-					<img src="~/images/woman2.png" data-position="320,520" data-step="3" data-in="fade" data-out="fade" data-ease-in="easeOutCirc">
-				</div>
-        </div>
-        <div class="block-center top-pos">
-            <a href="#page-content" data-scroll data-options='{ "easing": "linear" }' class="link-to center-pos">
-                <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-            </a>
-        </div>
-    </div>
-</div>
 
 <section id="page-content" class="white-bg" data-0="margin-top:0px;" data-100p="margin-top:-180px;" data-200p="margin-top:-360px;">
 
@@ -51,7 +10,6 @@
     <div class="d-line diagonal-3" data-0="top:1200px;" data-100p="top:1400px;" data-200p="top:1800px;" data-300p="top:2200px;" data-400p="top:2700px;"></div>
     <div class="d-line diagonal-4" data-0="top:1800px;" data-100p="top:2000px;" data-200p="top:2400px;" data-300p="top:2800px;" data-400p="top:3300px;"></div>
     <!-- Diagonal Line end -->
-
     <!-- section1 -->
     <div class="container" id="section-1">
         <!-- Top Content -->
@@ -293,6 +251,28 @@
         </div>
     </div>
     <!-- Section3 end -->
-
 </section>
 
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="clearfix">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Apps</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <p><a href=""><img src="~/images/follow-btn.png"></a> Sellys, Warsaw @DateTime.Now.Year</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->

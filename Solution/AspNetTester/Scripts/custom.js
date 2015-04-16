@@ -55,6 +55,7 @@ $(window).on('load',function(){
 	// Hide loader and display content
     $('#loader-wrapper').fadeOut('fast', function () {
         $('.slider').fractionSlider({
+            'slideTransitionSpeed': 500,
             'fullWidth': false,
             'controls': true,
             'pager': true,
