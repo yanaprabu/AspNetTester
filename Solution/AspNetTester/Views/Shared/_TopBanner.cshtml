@@ -13,14 +13,14 @@
                 <img src="~/images/woman.png" data-position="10,780" data-step="1" data-in="right" data-ease-in="easeOutCirc">
             </div>
             <div class="slide bg-2" data-in="fade">
-                <img src="~/images/top-logo.png" alt="logo" title="Logo" width="256" height="116" data-position="50,600" data-in="top" data-ease-in="easeOutCirc">
-                <p data-position="170,200" data-in="bottom" data-step="1" data-delay="500">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
-                <div class="block-center" data-position="230,590" data-in="bottom" data-out="fade" data-step="2">
-                    <a href="" class="custom-link-btn custom-fade uppercase">TAKE A TOUR</a>
+                <img src="~/images/top-logo.png" alt="logo" title="Logo" data-position="50,600" data-in="top" data-ease-in="easeOutCirc">
+                <p data-position="170,200" data-in="bottom" data-step="1">Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis fauer lobortis quis, varius in, purus.</p>
+                <div class="block-center" data-position="230,590" data-in="bottom" data-out="fade" data-step="1">
+                    @Html.ActionLink("TAKE A TOUR", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "custom-link-btn custom-fade uppercase" })
                 </div>
-                <img src="~/images/man-1.png" data-position="320,210" data-step="3" data-in="right" data-out="fade" data-ease-in="easeOutCirc">
-                <img src="~/images/man-2.png" data-position="320,820" data-step="3" data-in="left" data-out="fade" data-ease-in="easeOutCirc">
-                <img src="~/images/woman2.png" data-position="320,520" data-step="3" data-in="fade" data-out="fade" data-ease-in="easeOutCirc">
+                <img src="~/images/man-1.png" data-position="320,210" data-step="2" data-in="right" data-out="fade" data-ease-in="easeOutCirc">
+                <img src="~/images/man-2.png" data-position="320,820" data-step="2" data-in="left" data-out="fade" data-ease-in="easeOutCirc">
+                <img src="~/images/woman2.png" data-position="320,520" data-step="2" data-in="fade" data-out="fade" data-ease-in="easeOutCirc">
             </div>
         </div>
         <div class="block-center top-pos">
