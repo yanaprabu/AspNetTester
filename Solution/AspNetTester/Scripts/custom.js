@@ -55,15 +55,16 @@ $(window).on('load',function(){
 	// Hide loader and display content
     $('#loader-wrapper').fadeOut('fast', function () {
         $('.slider').fractionSlider({
-            'slideTransitionSpeed': 500,
+			'slideTransitionSpeed' : 500,
             'fullWidth': false,
             'controls': true,
             'pager': true,
             'responsive': true,
-            'dimensions': "1440,580",
+            'dimensions': "1440,710",
             'increase': true,
             'pauseOnHover': false,
-            'slideEndAnimation': true
+            'slideEndAnimation': true,
+			'speedOut' : 300,
         });
     });
 

@@ -159,6 +159,7 @@ blockquote {
 	}
 	
 .block-center {height:auto;display:block;text-align:center;}
+.block-center2 {height:auto;display:block;text-align:center;width:100%;}
 .block-center.top-pos {
   margin-top: -60px;
   position: relative;
@@ -194,7 +195,6 @@ blockquote {
 	border-width:0 0 2px;
 	border-color:transparent transparent #3bd4b6;
 	opacity:1;
-    padding:6px 0;
 }
 	.custom-link-btn:hover {
 		background-color:#16a085;
@@ -448,19 +448,21 @@ a.send-e i {vertical-align:middle;}
 	box-shadow:0 3px 5px #666;
 	z-index:1000;
 }
+.fs-pager-wrapper {bottom:30px;}
 .slider {
 	position:relative;
 	width:100%;
 	margin:0 auto;
 	background:#2c3e50;
+	_min-height:600px;
 }
-	.slider h1 {color:#ffffff;display:block;text-align:center;}
+	.slider h1 {color:#ffffff;display:block;text-align:center;font-size:330%;}
 	.left-text {text-align:left !important;}
 	.slider h1 strong {font-family: 'open_sansbold';}
 	.slider p{
 		z-index:8000;
 		padding:1% 3%;
-		font-size:16px;
+		font-size:140%;
 		font-family: 'open_sanslight';
 		color:#ffffff;
 		display:block;
@@ -472,6 +474,8 @@ a.send-e i {vertical-align:middle;}
 	.slider .teaser{padding:0.5% 1.5%;font-size:14px;line-height:100%}
 	.slider .small{width:250px;padding-left:0; padding-right:0px;text-align:center;}
 
+	.custom-link-btn {font-size:120%;}
+	
 	.slider .bg-1 {background:url(../images/bg-woman.png) no-repeat top center;}
 	.slider .bg-2 {background:url(../images/bg-people.png) no-repeat top center;}
 	
