@@ -1,0 +1,26 @@
+﻿@model AspNetTester.Models.RegisterViewModel
+
+<!-- form section -->
+<div id="form-section" class="blue-bg wow fadeInDown">
+    <div class="container">
+        <header class="col-md-12 block-center">
+            <h1>Sign up for Free and start using Sellys</h1>
+            <h4>Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies.</h4>
+        </header>
+        <div class="col-md-8 col-md-offset-2">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-register clearfix", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.TextBoxFor(m => m.Email, new { @placeholder="name@domain.com", @class = "emailfield" })
+                <input class="emailsend " type="submit" name="submit" value="SIGN UP NOW">
+            }
+            <div class="validation-form block-center">
+                <p><span class="glyphicon glyphicon-warning-sign"></span>  Nullam wisi ultricies a, gravida vitae</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- form section end -->
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
