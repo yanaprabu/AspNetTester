@@ -490,12 +490,22 @@ a.send-e i {vertical-align:middle;}
 		margin-bottom:0;
 	}
 	.carousel h2 {
-		color:#363636;
+		color:#8a8a8a;
 		display:block;
 		font-size:26px;
 		margin-top:0;
 		margin-bottom:12px;
 		text-transform:uppercase;
+	}
+	.carousel h2 a {
+		text-decoration:none;
+		color:#8a8a8a;
+		-moz-transition:All 0.2s linear;
+		-webkit-transition:All 0.2s linear;
+		transition:All 0.2s linear;
+	}
+	.carousel h2 a:hover {
+		color:#22303d;
 	}
 	.carousel p {
 		font-family:georgia;
