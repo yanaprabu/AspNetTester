@@ -15,13 +15,15 @@
     <div id="loader-wrapper">
         <div id="loader"></div>
     </div>
-	<!-- Display on mobile -->
+
+    <!-- Display on mobile -->
     <div class="top-sticky">
         <figure>
             <a href=""><img src="~/images/fixed-logo.png" alt="logo" title="Selly"></a>
         </figure>
     </div>
     <!-- Display on mobile end -->
+
 	<a class="show-menu"><i class="fa fa-arrow-circle-left"></i></a>
 	<div class="sidemenu side-hide">
 		<a class="hide-menu"><i class="fa fa-arrow-circle-right"></i></a>
@@ -44,14 +46,20 @@
 		
 	</div>
 	@Html.Partial("_TopBanner")
-    @RenderBody()
+    <section id="page-content" class="white-bg" data-0="margin-top:0px;" data-100p="margin-top:-180px;" data-200p="margin-top:-360px;">
+        
+        @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/fractionslider")
-    @Scripts.Render("~/bundles/scroller")
-    @Scripts.Render("~/bundles/custom")
-    @RenderSection("scripts", required: false)
-    @Scripts.Render("~/bundles/init")
+        @Html.Partial("_Section2")
+
+        @Html.Partial("_Section3")
+    </section>
+    @Html.Partial("_Footer")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @Scripts.Render("~/bundles/fractionslider")
+        @Scripts.Render("~/bundles/scroller")
+        @Scripts.Render("~/bundles/custom")
+        @Scripts.Render("~/bundles/init")
 </body>
 </html>

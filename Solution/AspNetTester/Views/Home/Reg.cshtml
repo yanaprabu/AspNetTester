@@ -1,0 +1,27 @@
+﻿@model AspNetTester.Models.ResponseViewModels
+@{
+    ViewBag.Title = "Signup Page";
+}
+<!-- Diagonal Line -->
+<div class="d-line diagonal-1" data-0="top:200px;" data-100p="top:400px;" data-200p="top:800px;"></div>
+<div class="d-line diagonal-2" data-0="top:500px;" data-100p="top:700px;" data-200p="top:1100px;"></div>
+<!-- Diagonal Line end -->
+<!-- form section -->
+<div id="form-section" class="blue-bg wow fadeInDown">
+    <div class="container">
+        <header class="col-md-12 block-center">
+            <h1>Sign up for Free and start using Sellys</h1>
+            <h4>Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies.</h4>
+        </header>
+        <div class="col-md-8 col-md-offset-2">
+            @using (Html.BeginForm("Reg", "Home", FormMethod.Post, new { @class = "form-register clearfix", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.TextBoxFor(m => m.Email, new { @placeholder="name@domain.com", @class = "emailfield" })
+                <input class="emailsend" type="submit" value="SIGN UP NOW">
+            }
+            @Html.ValidationSummary()
+        </div>
+    </div>
+</div>
+<!-- form section end -->

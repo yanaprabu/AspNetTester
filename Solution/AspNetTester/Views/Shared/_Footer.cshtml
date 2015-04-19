@@ -1,0 +1,24 @@
+﻿<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                @FootMenu(new[] { "About", "Blog", "Pricing", "App", "Help", "Terms", "Privacy", "Contact Us" }, className: "clearfix")
+            </div>
+            <div class="col-md-4">
+                <p><a href=""><img src="~/images/follow-btn.png"></a> Sellys, Warsaw @DateTime.Now.Year</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+@helper FootMenu(IEnumerable<string> items, string className = null)
+{
+	<ul class="@className">
+		@foreach (var item in items)
+		{
+			<li><a href="#">@item</a></li>
+		}
+	</ul>
+}

@@ -70,6 +70,7 @@ namespace AspNetTester.Models
         public string Email { get; set; }
     }
 
+
     public class ResetPasswordViewModel
     {
         [Required]
