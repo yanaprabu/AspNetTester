@@ -137,16 +137,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <ul class="clearfix">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Apps</a></li>
-                    <li><a href="">Help</a></li>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Privacy</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
+                @FootMenu(new[] { "About", "Blog", "Pricing", "App", "Help", "Terms", "Privacy", "Contact Us" }, className: "clearfix")
             </div>
             <div class="col-md-4">
                 <p><a href=""><img src="~/images/follow-btn.png"></a> Sellys, Warsaw @DateTime.Now.Year</p>
@@ -155,3 +146,13 @@
     </div>
 </footer>
 <!-- Footer end -->
+
+@helper FootMenu(IEnumerable<string> items, string className = null)
+{
+	<ul class="@className">
+		@foreach (var item in items)
+		{
+			<li><a href="#">@item</a></li>
+		}
+	</ul>
+}
